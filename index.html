@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/index.css">
+    
+    <!-- nav style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC&display=swap" rel="stylesheet">
+    
+    <!-- logo style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tourney:wght@800&display=swap" rel="stylesheet">
+    
+    <!-- body style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap" rel="stylesheet">
+    
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+    <title>Food</title>
+</head>
+
+<body>
+    <!-- landing page -->
+    <section class="section1">
+        <nav>
+            <div>
+                <label class="logo">Pearl</label>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="content">
+            <h3>ART OF COOKING</h3>
+            <p>THE BEST RESTAURENT IN TOWN</p> <br>
+            <div>
+                <button type="button"><span></span><a href="#">LOG IN</a></button>
+                <button type="button"><span></span><a href="#">OUR FEEDBACK</a></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer  -->
+    <div class="container">
+        <div class="footerPart">
+            <div class="box-footer">
+                <p>Quick Links</p>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="box-footer">
+                <p>Locations</p>
+                <ul>
+                    <li><a href="#">India</a></li>
+                    <li><a href="#">Japan</a></li>
+                    <li><a href="#">USA</a></li>
+                    <li><a href="#">France</a></li>
+                </ul>
+            </div>
+            <div class="box-footer">
+                <p>Contact info</p>
+                <ul>
+                    <li><a href="#">+123-456-7890</a></li>
+                    <li><a href="#">abc@gmail.Com</a></li>
+                    <li><a href="#">Kolkata, India - 700152</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <h4>Created by Kheyali Dhara</h4>
+</body>
+
+<!-- js -->
+<Script>
+    window.addEventListener("scroll", function () {
+        var nav = this.document.querySelector("nav")
+        nav.classList.toggle("sticky", window.scrollY > 0)
+    })
+</Script>
+
+</html>

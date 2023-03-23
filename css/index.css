@@ -1,0 +1,204 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;    
+}
+body{
+    background-color: rgb(255, 249, 241);
+    font-family: 'Lexend', sans-serif;
+}
+:root {
+    --main__color: rgb(248, 125, 2);
+}
+
+.break {
+    margin-top: 50px;
+    font-size: 35px;
+}
+
+.section1{
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('/Images/photo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+.content h3{
+    font-size: 50px;
+    margin-top: 80px;
+    text-transform: uppercase;
+}
+.content p{
+    margin: 3px auto;
+    font-weight: 100;
+    letter-spacing: 15px;
+}
+button
+{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid var(--main__color);
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+a{
+    color: white;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+button span{
+    background: var(--main__color);
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover a{
+    color: white;
+}
+button:hover{
+    border: none;
+}
+.logo{
+    font-size: 40px;
+    font-family: 'Tourney', cursive;
+    color: whitesmoke;
+}
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 10px 50px;
+    z-index: 1;
+}
+nav ul li{
+    font-family: 'Encode Sans SC', sans-serif;
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+    position: relative;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;    
+}
+nav ul li::after
+{
+    content: '';
+    height: 3px;
+    width: 0;
+    background-color: var(--main__color);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: .5s;
+}
+nav.sticky {
+    background-color: var(--main__color);    
+    width: 100%;
+
+}
+nav.sticky a.active{
+    color: white;
+    font-weight: bold;
+}
+nav.sticky a:hover{
+    color: white;
+    font-weight: normal;
+}
+nav.sticky ul li::after{
+    background-color: white;
+}
+nav ul li a.active,a:hover{
+    color: var(--main__color);
+    font-weight: bold;
+}
+nav ul li a.active,nav ul li:hover::after{
+    width: 100%;
+    cursor: pointer;
+}
+.checkbtn
+{
+    color: white;
+    font-size: 28px;
+    float: right;
+    margin-right: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+/* footer */
+.container{
+    margin-top: 50px;
+}
+.container .footerPart{
+    display: flex;
+    gap: 2;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+.container .footerPart .box-footer p{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.container .footerPart .box-footer ul{
+    list-style: none;
+    line-height: 2;
+}
+
+.container .footerPart .box-footer ul li a{
+    color: #000;
+    text-decoration: none;
+}
+
+.container .footerPart .box-footer ul li a:hover{
+    color: var(--main__color);
+}
+
+h4{
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+  
+.Slide img{
+    height: 300px;
+    width: 300px;
+}
